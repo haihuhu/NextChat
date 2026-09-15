@@ -476,6 +476,10 @@ export const DEFAULT_TTS_VOICES = [
 ];
 
 export const VISION_MODEL_REGEXES = [
+  /claude-.*-5/,          // 匹配所有带 -5 的 claude 模型（如 claude-sonnet-5, claude-fable-5 等）
+  /fable/,                // 匹配带有 fable 的模型
+  /gemini-3\./,           // 匹配 gemini 3.x 系列模型
+  /grok/,                 // 匹配 grok 模型
   /vision/,
   /gpt-4o/,
   /gpt-4\.1/,

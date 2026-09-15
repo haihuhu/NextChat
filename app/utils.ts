@@ -287,7 +287,6 @@ export function isVisionModel(model: string) {
     return true;
   }
 
-  
   return (
     !EXCLUDE_VISION_MODEL_REGEXES.some((regex) => regex.test(model)) &&
     VISION_MODEL_REGEXES.some((regex) => regex.test(model))

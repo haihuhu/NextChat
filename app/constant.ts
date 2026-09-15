@@ -476,28 +476,31 @@ export const DEFAULT_TTS_VOICES = [
 ];
 
 export const VISION_MODEL_REGEXES = [
-  /claude/,          // 匹配所有带 -5 的 claude 模型（如 claude-sonnet-5, claude-fable-5 等）                // 匹配带有 fable 的模型
-  /gemini/,           // 匹配 gemini 3.x 系列模型
-  /grok/,                 // 匹配 grok 模型
-  /vision/,
-  /gpt-4o/,
-  /gpt-4\.1/,
-  /claude.*[34]/,
-  /gemini-1\.5/,
-  /gemini-exp/,
-  /gemini-2\.[05]/,
-  /learnlm/,
-  /qwen-vl/,
-  /qwen2-vl/,
-  /gpt-4-turbo(?!.*preview)/,
-  /^dall-e-3$/,
-  /glm-4v/,
-  /vl/i,
-  /o3/,
-  /o4-mini/,
-  /grok-4/i,
-  /gpt-5/,
-  /gpt-6-astra/
+  /claude/,          // 匹配所有 claude 模型（如 claude-opus-5, claude-sonnet-5, claude-fable-5 等）
+  /sonnet/,          // 匹配 sonnet 系列模型（如 sonnet-5, sonnet-4 等）
+  /fable/,           // 匹配 fable 系列模型（如 claude-fable-5, claude-fable-5-1 等）
+  /opus-5/,          // 匹配 opus-5 系列模型（如 claude-opus-5 等）
+  /gemini/,          // 匹配 gemini 系列模型（如 gemini-3.8-flash, gemini-2.0-flash 等）
+  /gemini-3\./,      // 匹配 gemini-3.x 系列（如 gemini-3.8-flash）
+  /gemini-1\.5/,     // 匹配 gemini-1.5 系列
+  /gemini-exp/,      // 匹配 gemini 实验版本
+  /gemini-2\.[05]/,  // 匹配 gemini-2.0 和 2.5 系列
+  /grok/,            // 匹配 grok 系列模型
+  /vision/,          // 匹配 vision 模型
+  /gpt-4o/,          // 匹配 gpt-4o 系列
+  /gpt-4\.1/,        // 匹配 gpt-4.1 系列
+  /gpt-4-turbo(?!.*preview)/,  // 匹配 gpt-4-turbo
+  /^dall-e-3$/,      // 匹配 dall-e-3
+  /glm-4v/,          // 匹配 glm-4v 系列
+  /vl/i,             // 匹配 vl 系列
+  /o3/,              // 匹配 o3 系列
+  /o4-mini/,         // 匹配 o4-mini
+  /grok-4/i,         // 匹配 grok-4
+  /gpt-5/,           // 匹配 gpt-5 系列
+  /gpt-6-astra/,     // 匹配 gpt-6-astra
+  /learnlm/,         // 匹配 learnlm 系列
+  /qwen-vl/,         // 匹配 qwen-vl 系列
+  /qwen2-vl/,        // 匹配 qwen2-vl 系列
 ];
 
 export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];

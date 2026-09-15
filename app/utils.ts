@@ -286,6 +286,12 @@ export function isVisionModel(model: string) {
   if (envVisionModels?.includes(model)) {
     return true;
   }
+
+const myCustomVisionKeywords = ["claude",  "gemini-3", "grok", "gpt-6"];
+  if (myCustomVisionKeywords.some((keyword) => model.toLowerCase().includes(keyword))) {
+    return true;
+  }
+  
   return (
     !EXCLUDE_VISION_MODEL_REGEXES.some((regex) => regex.test(model)) &&
     VISION_MODEL_REGEXES.some((regex) => regex.test(model))

@@ -25,6 +25,12 @@ describe("isVisionModel", () => {
       "qwen2-vl-max",
       "gpt-4-turbo",
       "dall-e-3",
+      "claude-sonnet-5",     // 你的新模型
+  "claude-fable-5",      // 你的新模型
+  "claude-opus-5",       // 你的新模型
+  "gemini-3.8-flash",    // 你的新模型
+  "grok-4.6",            // 你的新模型
+  "gpt-6-astra",
     ];
 
     visionModels.forEach((model) => {

@@ -497,7 +497,7 @@ export const VISION_MODEL_REGEXES = [
   /o4-mini/,         // 匹配 o4-mini
   /grok-4/i,         // 匹配 grok-4
   /gpt-5/,           // 匹配 gpt-5 系列
-  /gpt-6-astra/,     // 匹配 gpt-6-astra
+  /gpt-6/,     // 匹配 gpt-6
   /learnlm/,         // 匹配 learnlm 系列
   /qwen-vl/,         // 匹配 qwen-vl 系列
   /qwen2-vl/,        // 匹配 qwen2-vl 系列
